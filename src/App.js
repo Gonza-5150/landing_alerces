@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import alerces_5 from "./assets/alerces_5.png";
+import alerces_4 from "./assets/alerces_4.jpg";
+import alerces_3 from "./assets/alerces_3.jpg";
+import alerces_2 from "./assets/alerces_02.jpg";
+import alerces_1 from "./assets/alerces_01.jpg";
+import Hero from "./components/Hero.js";
 
+
+ 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Hero imageSrc={alerces_5}/>
+          </div>
   );
 }
 
