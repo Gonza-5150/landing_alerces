@@ -12,7 +12,7 @@
     z-index: 5;
   }
   
-  .navbar__logo {
+  .navbar_logo {
     color: white;
     font-family: "MonteCarlo", cursive;
     font-size: 2.5rem;
@@ -21,7 +21,7 @@
   /*
     This is the container for all the navbar links ( <ul> )
     */
-  .navbar__list {
+  .navbar_list {
     display: flex;
     list-style: none;
   }
@@ -29,14 +29,14 @@
   /*
     This is a single item ( <li> ) in the list
     */
-  .navbar__item {
+  .navbar_item {
     white-space: nowrap;
   }
   
   /*
     The anchor tag ( <a> ) for the navbar links
     */
-  .navbar__link {
+  .navbar_link {
     font-size: 0.85rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -49,19 +49,19 @@
     transition: 250ms;
   }
   
-  .navbar__link:hover {
+  .navbar_link:hover {
     border-color: white;
     transition: 250ms;
   }
   
-  .navbar__menu {
+  .navbar_menu {
     color: white;
     display: none;
     cursor: pointer;
   }
   
   @media screen and (max-width: 800px) {
-    .navbar__list {
+    .navbar_list {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -74,15 +74,15 @@
       transition: all 0.5s ease;
     }
   
-    .navbar__list--active {
+    .navbar_list--active {
       left: 0;
     }
   
-    .navbar__menu {
+    .navbar_menu {
       display: block;
     }
   
-    .navbar__item {
+    .navbar_item {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -91,7 +91,7 @@
       flex: 1;
     }
   
-    .navbar__link {
+    .navbar_link {
       display: flex;
       height: 100%;
       width: 100%;
@@ -103,7 +103,7 @@
       opacity: 0.75;
     }
   
-    .navbar__link:hover {
+    .navbar_link:hover {
       border-width: 0px;
       opacity: 0.9;
     }

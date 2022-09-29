@@ -6,11 +6,19 @@ import alerces_2 from "./assets/alerces_02.jpg";
 import alerces_1 from "./assets/alerces_01.jpg";
 import Hero from "./components/Hero.js";
 import Slider from './components/Slider';
+import Navbar from "./components/Navbar"
+
+const navbarLinks = [
+  {url: "#", title: "Home"},
+  {url: "#", title: "Trips"},
+  {url: "#", title: "Rewards"}
+  ]
 
 
 function App() {
   return (
     <div className="App">
+      <Navbar navbarLinks={navbarLinks}/>
       <Hero imageSrc={alerces_5} />
       <Slider imageSrc={alerces_1}
         title={'Se un explorador'}
