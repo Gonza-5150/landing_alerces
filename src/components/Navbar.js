@@ -11,10 +11,23 @@ const Navbar = ({ navbarLinks }) => {
 
     return <nav className='navbar'>
         <span className='navbar_logo'>Alerces</span>
-        <ul className='navbar_list'>
+
+        {menuClicked ? (
+        <FiMenu
+        size={25}
+        className={"navbar_menu"}
+        onClick={toggleMenuClick}
+      />
+      ) : (
+        
+        <FiX size={25} className={"navbar_menu"} onClick={toggleMenuClick} />
+      )}
+
+        <ul className={
+          menuClicked ? "navbar_list" : "navbar_list navbar_list--active"}>
             {navbarLinks.map((item, index) => {
                 return (
-                    <li className='navbar_item' key={index}>
+                    <li className='navbar_item' key={item.title}>
                         <a className='navbar_link' href={item.url}>
                             {item.title}
                         </a>
