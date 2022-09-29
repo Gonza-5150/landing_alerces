@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css"
 
 const Navbar = ({ navbarLinks }) => {
+    const [menuClicked, setMenuClicked] = useState(false);
+
+    const toggleMenuClick = () => {
+        setMenuClicked(!menuClicked);
+      };
 
     return <nav className='navbar'>
         <span className='navbar_logo'>Alerces</span>
